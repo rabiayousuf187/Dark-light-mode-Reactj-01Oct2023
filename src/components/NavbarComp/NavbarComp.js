@@ -18,13 +18,15 @@ const NavbarComp = (args) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+    // Initially, the isOpen state is set to false, which makes the navbar collapsed.
     return (
         <>
-            <Navbar {...args}>
-                <NavbarBrand href="/">reactstrap</NavbarBrand>
+            <Navbar expand="lg" {...args}>
+                <NavbarBrand href="/">Material Kit React</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="me-auto" navbar>
+                    <Nav className="ml-auto flex-row-reverse" navbar>
                         <NavItem>
                             <NavLink href="/components/">Components</NavLink>
                         </NavItem>
@@ -33,9 +35,23 @@ const NavbarComp = (args) => {
                                 GitHub
                             </NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            UPGRADE TO PRO
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            DOWNLOAD
+                            </NavLink>
+                        </NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            DOWNLOAD
+                            </NavLink>
+                        </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
-                                Options
+                             COMPONENTS
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>Option 1</DropdownItem>
@@ -45,11 +61,11 @@ const NavbarComp = (args) => {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
+                    <NavbarText>UPGRADE TO PRO</NavbarText>
                 </Collapse>
             </Navbar>
         </>
     );
 }
 
-export default NavbarComp
+export default NavbarComp;
