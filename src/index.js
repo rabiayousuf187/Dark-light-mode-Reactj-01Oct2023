@@ -4,12 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// Import necessary packages
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee, faUser } from '@fortawesome/free-solid-svg-icons';
-
-// Add the icons to the library
-library.add(faCoffee, faUser);
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

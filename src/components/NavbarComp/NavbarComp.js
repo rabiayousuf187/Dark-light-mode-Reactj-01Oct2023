@@ -13,7 +13,13 @@ import {
     DropdownItem,
     NavbarText,
 } from 'reactstrap';
-
+// Import necessary packages
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core';
+// import { faCoffee, faUser } from '@fortawesome/free-solid-svg-icons';
+// import { ArrowRight, HeartFill } from 'react-bootstrap-icons';
+// Add the icons to the library
+// library.add(faCoffee, faUser);
 const NavbarComp = (args) => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -26,32 +32,10 @@ const NavbarComp = (args) => {
                 <NavbarBrand href="/">Material Kit React</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="ml-auto flex-row-reverse" navbar>
-                        <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
-                                GitHub
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
-                            UPGRADE TO PRO
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
-                            DOWNLOAD
-                            </NavLink>
-                        </NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
-                            DOWNLOAD
-                            </NavLink>
-                        </NavItem>
+                    <Nav className="ml-auto" navbar>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
-                             COMPONENTS
+                            <i class="bi bi-grid-3x3-gap-fill"></i>COMPONENTS
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>Option 1</DropdownItem>
@@ -60,8 +44,32 @@ const NavbarComp = (args) => {
                                 <DropdownItem>Reset</DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                                UPGRADE TO PRO
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            <FontAwesomeIcon icon="coffee" />DOWNLOAD
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/components/"><FontAwesomeIcon icon="coffee" /></NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            <FontAwesomeIcon icon="coffee" />
+                            </NavLink>
+                        </NavItem>
+                        
+                        
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            <FontAwesomeIcon icon="coffee" />
+                            </NavLink>
+                        </NavItem>
                     </Nav>
-                    <NavbarText>UPGRADE TO PRO</NavbarText>
                 </Collapse>
             </Navbar>
         </>
