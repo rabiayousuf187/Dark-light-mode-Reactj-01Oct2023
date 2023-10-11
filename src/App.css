@@ -43,6 +43,11 @@
   height: 70vh;
   background: #070745;
 }
+.navbar-wrapper {
+  background: white;
+  position: relative;
+  top: 60px;
+}
 .collapse.navbar-collapse {
   flex-grow: 0;
 }

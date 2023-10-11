@@ -14,14 +14,10 @@ import {
     NavbarText,
 } from 'reactstrap';
 
-
-// Import necessary packages
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { library } from '@fortawesome/fontawesome-svg-core';
-// import { faCoffee, faUser } from '@fortawesome/free-solid-svg-icons';
-// Add the icons to the library
-// library.add(faCoffee, faUser);
 const NavbarComp = (args) => {
+    const {compClass} = args;
+
+    console.log("NAVBAR props === ", compClass)
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -29,14 +25,14 @@ const NavbarComp = (args) => {
     // Initially, the isOpen state is set to false, which makes the navbar collapsed.
     return (
         <>
-            <Navbar expand="lg" {...args} className='left-menu'>
+            <Navbar expand="lg" {...args} className={`left-menu ${compClass}`}>
                 <NavbarBrand href="/">Material Kit React</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto left-menu" navbar>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
-                            <i class="bi bi-grid-3x3-gap-fill"></i>COMPONENTS
+                                <i class="bi bi-grid-3x3-gap-fill"></i>COMPONENTS
                             </DropdownToggle>
                             <DropdownMenu right>
                                 <DropdownItem>Option 1</DropdownItem>
@@ -52,7 +48,7 @@ const NavbarComp = (args) => {
                         </NavItem>
                         <NavItem>
                             <NavLink href="https://github.com/reactstrap/reactstrap">
-                            <i class="bi bi-cloud-arrow-down-fill"></i>DOWNLOAD
+                                <i class="bi bi-cloud-arrow-down-fill"></i>DOWNLOAD
                             </NavLink>
                         </NavItem>
                         <NavItem>
@@ -60,14 +56,14 @@ const NavbarComp = (args) => {
                         </NavItem>
                         <NavItem>
                             <NavLink href="https://www.facebook.com/">
-                            <i class="bi bi-facebook"></i>
+                                <i class="bi bi-facebook"></i>
                             </NavLink>
                         </NavItem>
-                        
-                        
+
+
                         <NavItem>
                             <NavLink href="https://www.instagram.com/">
-                            <i class="bi bi-instagram"></i>
+                                <i class="bi bi-instagram"></i>
                             </NavLink>
                         </NavItem>
                     </Nav>
