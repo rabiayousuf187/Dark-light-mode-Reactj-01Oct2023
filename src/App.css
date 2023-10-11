@@ -39,6 +39,16 @@
 
 
 /* ******** New Style *********** */
-.left-menu{
-  justify-content: end;
+.collapse.navbar-collapse {
+  flex-grow: 0;
+}
+li.nav-item {
+  margin: 0px 15px;
+}
+
+a.nav-link {
+  font-size: 17px;
+}
+a.nav-link i {
+  margin-right: 8px;
 }
