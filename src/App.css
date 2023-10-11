@@ -39,6 +39,10 @@
 
 
 /* ******** New Style *********** */
+.banner{
+  height: 70vh;
+  background: #070745;
+}
 .collapse.navbar-collapse {
   flex-grow: 0;
 }

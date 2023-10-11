@@ -7,7 +7,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Container className="bg-light border" fluid>
+      <Container className='banner' fluid>
+      {/* <Container className="bg-light border" fluid> */}
         <Container>
           <NavbarComp></NavbarComp>
         </Container>
