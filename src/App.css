@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -94,6 +97,21 @@ a.nav-link i:focus,
 a.nav-link i:hover,
 a.nav-link i:visited {
 font-size: 18px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -180px;
+}
+.info h2{
+  padding: 50px 5px 30px;
+  font-family: 'Young Serif', serif;
+}
+.info h4{
+  padding-bottom: 30px;
 }
 .profile {
   padding: 25px;
