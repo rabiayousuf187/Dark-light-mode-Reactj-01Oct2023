@@ -49,7 +49,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh;
+  /* height: 40vh; */
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -80,7 +80,7 @@ a.navbar-brand {
 }
 
 a.nav-link {
-  font-size: 18px;
+  font-size: 13px;
   color: whitesmoke;
 }
 
@@ -104,8 +104,9 @@ a.nav-link i:active,
 a.nav-link i:focus,
 a.nav-link i:hover,
 a.nav-link i:visited {
-  font-size: 18px;
+  font-size: 14px;
 }
+
 .profile {
   padding: 25px;
   border: 3px solid whitesmoke;
@@ -119,21 +120,28 @@ a.nav-link i:visited {
   align-items: center;
 }
 
+.profiler-wrapper {
+  width: 70%;
+}
+
 .profile-img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border: 2px solid whitesmoke;
   border-radius: 50%;
   background: url('./img/user.jpg');
   background-repeat: no-repeat;
   background-position: 80% 20%;
-  background-size: inherit;
+  background-size: 220%;
   position: relative;
-  top: -180px;
+  top: -130px;
 }
+
 .details {
   position: absolute;
+  top: 125px;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -144,21 +152,46 @@ a.nav-link i:visited {
 }
 
 .info h2 {
-  padding: 50px 5px 20px;
+  /* padding: 50px 5px 20px; */
   /* font-family: 'Young Serif', serif; */
   font-family: 'Zilla Slab', serif;
-  font-size: 38px;
+  /* font-size: 38px; */
   font-weight: 700;
 }
 
-.info .job-title{
-  padding-bottom: 30px;
+.info .job-title {
+  margin: 25px 10px;
   text-transform: uppercase;
+  letter-spacing: -1.9px;
+}
+
+.social-link {
+  margin: 5px;
 }
 
 .social-link .btn {
   background: none;
   color: darkgray;
-  font-size: xx-large;
+  font-size: 23px;
   border: none;
+}
+
+.about {
+  margin: 10px auto;
+  width: 75%;
+  color: #80808099;
+}
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.portfolio button.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fafafa05;
+  box-shadow: 0px 1px 1px #d3d3d370;
 }

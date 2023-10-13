@@ -5,14 +5,14 @@ import { Button, Container } from 'reactstrap';
 const Profile = (args) => {
     return (
         <div {...args}>
-            <Container>
+            <Container className='profiler-wrapper'>
                 <div className='info'>
                     <div className='profile-img'>
                         {/* <img className='user-img' src={user} alt='avatar' /> */}
                     </div>
                     <div className='details'>
                         <h2 className='username'>Christian Louboutin</h2>
-                        <h4 className='job-title'>Front End Developer</h4>
+                        <h5 className='job-title'>Front End Developer</h5>
 
                     </div>
                 </div>
