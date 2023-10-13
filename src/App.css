@@ -194,4 +194,11 @@ a.nav-link i:visited {
   align-items: center;
   background: #fafafa05;
   box-shadow: 0px 1px 1px #d3d3d370;
+  margin: 0px 15px;
+  font-weight: 500;
+  height: 80px;
 }
+.portfolio button.btn:hover {
+background-color:   #b312d4;
+color: white;
+};
