@@ -25,7 +25,7 @@ const NavbarComp = (args) => {
     // Initially, the isOpen state is set to false, which makes the navbar collapsed.
     return (
         <>
-            <Navbar expand="lg" {...args} className={`left-menu ${compClass}`}>
+            <Navbar expand="xl" {...args} className={`left-menu ${compClass}`}>
                 <NavbarBrand href="/">Material Kit React</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
