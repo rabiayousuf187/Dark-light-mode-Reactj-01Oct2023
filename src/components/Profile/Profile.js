@@ -1,9 +1,9 @@
 import React from 'react';
-import user from '../../img/user.jpg'
+// import user from '../../img/user.jpg'
 
-const Profile = () => {
+const Profile = (args) => {
     return (
-        <div>
+        <div {...args}>
             <div className='info'>
                 <div className='profile-img'>
                     {/* <img className='user-img' src={user} alt='avatar' /> */}

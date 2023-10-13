@@ -42,7 +42,7 @@
 .banner{
   height: 70vh;
   /* background: #070745, url('../public/img/banner2.jpg'); */
-  background: linear-gradient(#070745, rgba(0, 0, 0, 0.5)), url('../public/img/banner2.jpg');
+  background: linear-gradient(#070745, rgba(0, 0, 0, 0.5)), url('./img/banner2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -95,7 +95,10 @@ a.nav-link i:hover,
 a.nav-link i:visited {
 font-size: 18px;
 }
-
+.profile{
+  padding: 25px;
+    border: 2px solid whitesmoke;
+}
 .profile-img {
     width: 300px;
     height: 300px;

@@ -15,8 +15,8 @@ function App() {
           <NavbarComp compClass="navbar-wrapper" />
         </Container>
       </Container>
-      <Container className='content'>
-        <Profile></Profile>
+      <Container className='content' fluid>
+        <Profile className = "profile"></Profile>
       </Container>
     </div>
   );
