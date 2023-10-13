@@ -14,6 +14,9 @@ function App() {
           <NavbarComp compClass="navbar-wrapper" />
         </Container>
       </Container>
+      <Container className='content'>
+
+      </Container>
     </div>
   );
 }
