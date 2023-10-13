@@ -28,8 +28,8 @@ const Profile = (args) => {
                 </div>
                 <div className='portfolio'>
                     <button className='btn' href="https://www.facebook.com/"><i class="bi bi-twitter"></i>STUDIO</button>
-                    <button className='btn' href="https://www.facebook.com/"><i class="bi bi-facebook"></i>WORK</button>
-                    <button className='btn' href="https://www.instagram.com/"><i class="bi bi-instagram"></i>FAVORITE</button>
+                    <button className='btn' href="https://www.facebook.com/"><i class="bi bi-palette"></i>WORK</button>
+                    <button className='btn' href="https://www.instagram.com/"><i class="bi bi-heart"></i>FAVORITE</button>
                 </div>
 
 
