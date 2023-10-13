@@ -4,9 +4,9 @@ import user from '../../img/user.jpg'
 const Profile = () => {
     return (
         <div>
-            <div className='profile-img'>
-                <div>
-                    <img src={user} alt='avatar' />
+            <div className='info'>
+                <div className='profile-img'>
+                    {/* <img className='user-img' src={user} alt='avatar' /> */}
                 </div>
                 <h2 className='username'>Christian Louboutin</h2>
                 <h4 className='job-title'>Front End Developer</h4>

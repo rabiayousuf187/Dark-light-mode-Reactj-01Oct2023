@@ -95,3 +95,14 @@ a.nav-link i:hover,
 a.nav-link i:visited {
 font-size: 18px;
 }
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid whitesmoke;
+    border-radius: 50%;
+    background: url('./img/user.jpg');
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    background-size: inherit;
+}
