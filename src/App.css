@@ -156,3 +156,9 @@ a.nav-link i:visited {
   text-transform: uppercase;
 }
 
+.social-link .btn {
+  background: none;
+  color: darkgray;
+  font-size: xx-large;
+  border: none;
+}
