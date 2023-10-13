@@ -41,12 +41,25 @@
 /* ******** New Style *********** */
 .banner{
   height: 70vh;
-  background: #070745;
+  /* background: #070745, url('../public/img/banner2.jpg'); */
+  background: linear-gradient(#070745, rgba(0, 0, 0, 0.5)), url('../public/img/banner2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
 }
 .navbar-wrapper {
   /* background: white; */
-  position: relative;
-  top: 60px;
+  /* position: relative;
+  top: 60px; */
+  margin-top: 50px;
+}
+button.navbar-toggler {
+  background: whitesmoke;
 }
 .collapse.navbar-collapse {
   flex-grow: 0;
