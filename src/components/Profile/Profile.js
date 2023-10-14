@@ -1,5 +1,8 @@
 import React from 'react';
 import { Button, Container } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+
 // import user from '../../img/user.jpg'
 
 const Profile = (args) => {
@@ -18,8 +21,8 @@ const Profile = (args) => {
                 </div>
                 <div className='social-link'>
                     <Button href="https://www.facebook.com/"><i class="bi bi-twitter"></i></Button>
-                    <Button href="https://www.facebook.com/"><i class="bi bi-facebook"></i></Button>
                     <Button href="https://www.instagram.com/"><i class="bi bi-instagram"></i></Button>
+                    <Button href="https://www.facebook.com/"><i class="bi bi-facebook"></i></Button>
                 </div>
                 <div className='about'>
                     <p>
@@ -28,8 +31,8 @@ const Profile = (args) => {
                 </div>
                 <div className='portfolio'>
                     <button className='btn' href="https://www.facebook.com/"><i class="bi bi-twitter"></i>STUDIO</button>
-                    <button className='btn' href="https://www.facebook.com/"><i class="bi bi-palette"></i>WORK</button>
-                    <button className='btn' href="https://www.instagram.com/"><i class="bi bi-heart"></i>FAVORITE</button>
+                    <button className='btn' href="https://www.facebook.com/"><FontAwesomeIcon icon="fa-solid fa-palette" /></i>WORK</button>
+                    <button className='btn' href="https://www.instagram.com/"><FontAwesomeIcon icon={faHeart} />FAVORITE</button>
                 </div>
 
 
