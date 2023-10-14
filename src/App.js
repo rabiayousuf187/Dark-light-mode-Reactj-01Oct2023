@@ -26,11 +26,11 @@ function App() {
         {/* <Container className="bg-light border" fluid> */}
         <Container>
           <NavbarComp compClass="navbar-wrapper">
-               <Button onClick={changeTheme}>{theme.backgroundColor == "white" ? <i class="bi bi-brightness-high-fill"></i> : <i class="bi bi-moon-stars-fill"></i> }</Button>
+               <Button style={{background: 'none',border: 'none'}} onClick={changeTheme}>{theme.backgroundColor == "white" ? <i class="bi bi-brightness-high-fill"></i> : <i class="bi bi-moon-stars-fill"></i> }</Button>
           </NavbarComp>
         </Container>
       </Container>
-      <Container className="content" fluid>
+      <Container className="content" fluid style={theme}>
         <Profile className="profile"  style={theme}></Profile>
       </Container>
     </div>

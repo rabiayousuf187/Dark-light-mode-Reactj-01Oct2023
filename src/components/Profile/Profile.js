@@ -6,7 +6,7 @@ import { faHeart, faPalette, faMusic } from "@fortawesome/free-solid-svg-icons";
 // import user from '../../img/user.jpg'
 
 const Profile = (args) => {
-    console.log(" argss ==== ", args.style, args.style.backgroundColor);
+    // console.log(" argss ==== ", args.style, args.style.backgroundColor);
     return (
         <div {...args}>
             <Container className="profiler-wrapper">
@@ -41,7 +41,6 @@ const Profile = (args) => {
                 </div>
                 <div className="portfolio">
                     <button
-                        
                         className="btn"
                         href="https://www.facebook.com/"
                     >
@@ -49,10 +48,6 @@ const Profile = (args) => {
                         STUDIO
                     </button>
                     <button
-                        style={{
-                            backgroundColor: args.style.backgroundColor,
-                            color: args.style.backgroundColor === 'black' ? addEventListener = (e)=>{
-                                e.target.className.Profile.color = 'white' : 'black' }                           }}
                         className='btn'
                         href="https://www.facebook.com/"
                     >
@@ -60,7 +55,6 @@ const Profile = (args) => {
                         WORK
                     </button>
                     <button
-                        style={args.style}
                         className="btn"
                         href="https://www.instagram.com/"
                     >
