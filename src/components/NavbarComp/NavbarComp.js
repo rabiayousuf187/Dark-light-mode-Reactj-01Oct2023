@@ -59,13 +59,12 @@ const NavbarComp = (args) => {
                                 <i class="bi bi-facebook"></i>
                             </NavLink>
                         </NavItem>
-
-
                         <NavItem>
                             <NavLink href="https://www.instagram.com/">
                                 <i class="bi bi-instagram"></i>
                             </NavLink>
                         </NavItem>
+                        {args.children}
                     </Nav>
                 </Collapse>
             </Navbar>
