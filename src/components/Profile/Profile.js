@@ -31,13 +31,13 @@ const Profile = (args) => {
                 </div>
                 <div className='portfolio'>
                     <button className='btn' href="https://www.facebook.com/"><i class="bi bi-twitter"></i>STUDIO</button>
-                    <button className='btn' href="https://www.facebook.com/"><FontAwesomeIcon icon="fa-solid fa-palette" /></i>WORK</button>
+                    <button className='btn' href="https://www.facebook.com/"><FontAwesomeIcon icon="fa-solid fa-palette" />WORK</button>
                     <button className='btn' href="https://www.instagram.com/"><FontAwesomeIcon icon={faHeart} />FAVORITE</button>
                 </div>
 
 
             </Container>
-        </div >
+        </div>
     )
 }
 
